@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Os 5 Passos para Vender em 24 Horas</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: {
+              500: "#ff3008",
+              600: "#e52b06",
+              700: "#c92405"
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-neutral-950 text-white antialiased">
+
+  <!-- =====================================================
+       APP
+  ====================================================== -->
+
+  <main id="app" class="min-h-screen">
+
+    <!-- ===================================================
+         1. PÁGINA DE VENDAS
+    ==================================================== -->
+
+    <section id="salesPage">
+
+      <!-- HERO -->
+
+      <div class="px-5 pt-8 pb-10 max-w-xl mx-auto">
+
+        <div class="text-center">
+
+          <span class="inline-flex items-center rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-xs font-semibold text-red-400">
+            GUIA PRÁTICO
+          </span>
+
+          <h1 class="mt-6 text-4xl font-black leading-[1.05] tracking-tight">
+            Os 5 Passos para
+            <span class="text-red-500">Vender em 24 Horas</span>
+          </h1>
+
+          <p class="mt-5 text-base leading-7 text-neutral-400">
+            Um método direto para transformar uma oferta em conversa,
+            conversa em oportunidade e oportunidade em venda.
+          </p>
+
+        </div>
+
+        <!-- CARD PRODUTO -->
+
+        <div class="mt-8 overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900 shadow-2xl">
+
+          <div class="bg-gradient-to-br from-red-600 to-red-800 p-6">
+
+            <div class="flex items-start justify-between">
+
+              <div>
+                <p class="text-xs font-bold uppercase tracking-widest text-white/70">
+                  E-book
+                </p>
+
+                <h2 class="mt-2 text-2xl font-black">
+                  Venda em 24h
+                </h2>
+              </div>
+
+              <div class="rounded-2xl bg-white/10 px-3 py-2 text-xs font-bold">
+                PDF
+              </div>
+
+            </div>
+
+            <div class="mt-8">
+              <p class="text-sm text-white/70">Você paga apenas</p>
+
+              <div class="mt-1 flex items-end gap-2">
+                <span class="text-4xl font-black">R$ 19,90</span>
+                <span class="pb-1 text-sm text-white/60">pagamento único</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-6">
+
+            <p class="text-sm font-bold text-white">
+              Você vai aprender:
+            </p>
+
+            <ul class="mt-4 space-y-4 text-sm text-neutral-300">
+
+              <li class="flex gap-3">
+                <span class="text-red-500">✓</span>
+                Como criar uma oferta simples e fácil de entender
+              </li>
+
+              <li class="flex gap-3">
+                <span class="text-red-500">✓</span>
+                Como encontrar pessoas com potencial de compra
+              </li>
+
+              <li class="flex gap-3">
+                <span class="text-red-500">✓</span>
+                Como iniciar uma conversa sem parecer desesperado
+              </li>
+
+              <li class="flex gap-3">
+                <span class="text-red-500">✓</span>
+                Como conduzir a conversa até uma proposta
+              </li>
+
+              <li class="flex gap-3">
+                <span class="text-red-500">✓</span>
+                Como fazer o fechamento de forma natural
+              </li>
+
+            </ul>
+
+            <button
+              onclick="goToCart()"
+              class="mt-7 w-full rounded-2xl bg-red-500 px-6 py-4 text-base font-black text-white shadow-lg shadow-red-500/20 transition active:scale-[0.98] hover:bg-red-600">
+
+              QUERO VENDER EM 24 HORAS
+
+            </button>
+
+            <p class="mt-3 text-center text-xs text-neutral-500">
+              Acesso digital após a confirmação
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PROMESSA -->
+
+        <div class="mt-10">
+
+          <h2 class="text-2xl font-black">
+            Não é sobre vender para todo mundo.
+          </h2>
+
+          <p class="mt-4 leading-7 text-neutral-400">
+            É sobre saber quem procurar, o que oferecer e como conduzir
+            uma conversa comercial sem complicar.
+          </p>
+
+        </div>
+
+        <!-- 5 PASSOS -->
+
+        <div class="mt-8 space-y-3">
+
+          <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+            <span class="text-xs font-bold text-red-500">PASSO 01</span>
+            <h3 class="mt-1 font-bold">Escolha o que vender</h3>
+          </div>
+
+          <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+            <span class="text-xs font-bold text-red-500">PASSO 02</span>
+            <h3 class="mt-1 font-bold">Encontre quem precisa</h3>
+          </div>
+
+          <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+            <span class="text-xs font-bold text-red-500">PASSO 03</span>
+            <h3 class="mt-1 font-bold">Comece a conversa</h3>
+          </div>
+
+          <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+            <span class="text-xs font-bold text-red-500">PASSO 04</span>
+            <h3 class="mt-1 font-bold">Apresente a solução</h3>
+          </div>
+
+          <div class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+            <span class="text-xs font-bold text-red-500">PASSO 05</span>
+            <h3 class="mt-1 font-bold">Peça a venda</h3>
+          </div>
+
+        </div>
+
+        <!-- CTA FINAL -->
+
+        <button
+          onclick="goToCart()"
+          class="mt-8 w-full rounded-2xl bg-red-500 px-6 py-5 text-lg font-black shadow-xl shadow-red-500/20">
+
+          QUERO O MÉTODO AGORA
+
+        </button>
+
+        <p class="mt-5 pb-8 text-center text-xs text-neutral-600">
+          Material digital • Pagamento único • Acesso online
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         2. CARRINHO
+    ==================================================== -->
+
+    <section id="cartPage" class="hidden">
+
+      <div class="mx-auto max-w-xl px-5 py-6">
+
+        <button onclick="showPage('salesPage')"
+          class="mb-8 text-sm font-semibold text-neutral-400">
+          ← Voltar
+        </button>
+
+        <span class="text-xs font-bold uppercase tracking-widest text-red-500">
+          Seu pedido
+        </span>
+
+        <h1 class="mt-2 text-3xl font-black">
+          Carrinho
+        </h1>
+
+        <div class="mt-8 rounded-3xl border border-neutral-800 bg-neutral-900 p-5">
+
+          <div class="flex gap-4">
+
+            <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-red-500 font-black">
+              PDF
+            </div>
+
+            <div class="flex-1">
+
+              <h2 class="font-bold">
+                Os 5 Passos para Vender em 24 Horas
+              </h2>
+
+              <p class="mt-1 text-sm text-neutral-500">
+                E-book digital
+              </p>
+
+              <p class="mt-3 font-black">
+                R$ 19,90
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="mt-6 rounded-3xl border border-neutral-800 bg-neutral-900 p-5">
+
+          <div class="flex justify-between text-sm text-neutral-400">
+            <span>Produto</span>
+            <span>R$ 19,90</span>
+          </div>
+
+          <div class="my-4 border-t border-neutral-800"></div>
+
+          <div class="flex justify-between">
+            <span class="font-bold">Total</span>
+            <span class="text-xl font-black">R$ 19,90</span>
+          </div>
+
+        </div>
+
+        <button
+          onclick="goToCheckout()"
+          class="mt-6 w-full rounded-2xl bg-red-500 px-6 py-5 font-black">
+
+          CONTINUAR PARA PAGAMENTO
+
+        </button>
+
+        <p class="mt-4 text-center text-xs text-neutral-600">
+          Você será direcionado para o checkout.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         3. CHECKOUT
+    ==================================================== -->
+
+    <section id="checkoutPage" class="hidden">
+
+      <div class="mx-auto max-w-xl px-5 py-6">
+
+        <button onclick="showPage('cartPage')"
+          class="mb-8 text-sm font-semibold text-neutral-400">
+          ← Voltar
+        </button>
+
+        <span class="text-xs font-bold uppercase tracking-widest text-red-500">
+          Finalizar compra
+        </span>
+
+        <h1 class="mt-2 text-3xl font-black">
+          Seus dados
+        </h1>
+
+        <form id="checkoutForm" class="mt-8 space-y-5">
+
+          <div>
+            <label class="text-sm font-semibold">
+              Nome
+            </label>
+
+            <input
+              id="name"
+              required
+              type="text"
+              placeholder="Seu nome"
+              class="mt-2 w-full rounded-2xl border border-neutral-800 bg-neutral-900 px-4 py-4 outline-none focus:border-red-500">
+          </div>
+
+          <div>
+            <label class="text-sm font-semibold">
+              E-mail
+            </label>
+
+            <input
+              id="email"
+              required
+              type="email"
+              placeholder="voce@email.com"
+              class="mt-2 w-full rounded-2xl border border-neutral-800 bg-neutral-900 px-4 py-4 outline-none focus:border-red-500">
+          </div>
+
+          <div>
+            <label class="text-sm font-semibold">
+              Forma de pagamento
+            </label>
+
+            <select
+              id="payment"
+              class="mt-2 w-full rounded-2xl border border-neutral-800 bg-neutral-900 px-4 py-4 outline-none">
+
+              <option value="pix">PIX</option>
+              <option value="card">Cartão</option>
+
+            </select>
+          </div>
+
+          <div class="rounded-2xl border border-red-500/20 bg-red-500/5 p-4">
+
+            <div class="flex justify-between">
+
+              <span class="text-sm text-neutral-400">
+                Total
+              </span>
+
+              <strong class="text-xl">
+                R$ 19,90
+              </strong>
+
+            </div>
+
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-2xl bg-red-500 px-6 py-5 text-base font-black">
+
+            FINALIZAR COMPRA — R$ 19,90
+
+          </button>
+
+          <p class="text-center text-xs leading-5 text-neutral-600">
+            Este é um checkout demonstrativo.
+            Nenhum pagamento real será processado.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         4. COMPRA CONCLUÍDA
+    ==================================================== -->
+
+    <section id="successPage" class="hidden">
+
+      <div class="flex min-h-screen items-center justify-center px-5">
+
+        <div class="w-full max-w-xl text-center">
+
+          <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-500/10 text-4xl">
+            ✓
+          </div>
+
+          <span class="mt-6 block text-xs font-bold uppercase tracking-widest text-green-500">
+            Compra concluída
+          </span>
+
+          <h1 class="mt-3 text-4xl font-black">
+            Tudo certo.
+          </h1>
+
+          <p class="mx-auto mt-4 max-w-md leading-7 text-neutral-400">
+            Seu pedido foi registrado com sucesso.
+            O próximo passo é acessar o seu material.
+          </p>
+
+          <div class="mt-8 rounded-3xl border border-neutral-800 bg-neutral-900 p-6 text-left">
+
+            <p class="text-xs font-bold uppercase tracking-widest text-neutral-500">
+              Seu produto
+            </p>
+
+            <h2 class="mt-2 font-bold">
+              Os 5 Passos para Vender em 24 Horas
+            </h2>
+
+            <p class="mt-2 text-sm text-neutral-500">
+              Formato PDF
+            </p>
+
+            <button
+              class="mt-5 w-full rounded-2xl bg-white px-5 py-4 font-black text-neutral-950">
+
+              ACESSAR MEU PDF
+
+            </button>
+
+          </div>
+
+          <button
+            onclick="showPage('salesPage')"
+            class="mt-6 text-sm font-semibold text-neutral-500">
+
+            Voltar para a página inicial
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    const pages = [
+      "salesPage",
+      "cartPage",
+      "checkoutPage",
+      "successPage"
+    ];
+
+    function showPage(page) {
+
+      pages.forEach(id => {
+        document.getElementById(id).classList.add("hidden");
+      });
+
+      document.getElementById(page).classList.remove("hidden");
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+
+    function goToCart() {
+      showPage("cartPage");
+    }
+
+    function goToCheckout() {
+      showPage("checkoutPage");
+    }
+
+    document
+      .getElementById("checkoutForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+
+        if (!name) return;
+
+        showPage("successPage");
+
+      });
+
+  </script>
+
+</body>
+</html>
+
