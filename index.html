@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Os 5 Passos para Vender em 24 Horas</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WVP68Z34X0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WVP68Z34X0');
-</script>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
@@ -22,924 +13,873 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              500: "#ff3008",
-              600: "#e52b06",
-              700: "#c92405"
-            }
+            brand: '#ff3008'
           }
         }
       }
-    };
+    }
   </script>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      -webkit-tap-highlight-color: transparent;
+      background: #080808;
+      color: #f5f5f5;
     }
 
     .page {
-      animation: pageIn .25s ease;
+      display: none;
     }
 
-    @keyframes pageIn {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
+    .page.active {
+      display: block;
+    }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    button:disabled {
+      opacity: .6;
+      cursor: not-allowed;
     }
   </style>
 </head>
 
-<body class="bg-neutral-950 text-white antialiased">
+<body class="min-h-screen">
 
-  <main id="app" class="min-h-screen">
+  <!-- ===================================================== -->
+  <!-- VENDA -->
+  <!-- ===================================================== -->
 
+  <section id="salesPage" class="page active">
 
-    <!-- =====================================================
-         1. PÁGINA DE VENDAS
-    ====================================================== -->
+    <div class="max-w-xl mx-auto px-5 py-8">
 
-    <section id="salesPage" class="page">
+      <div class="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-white/10 bg-white/[0.04] text-xs font-bold uppercase tracking-wider">
 
-      <div class="mx-auto max-w-lg px-5 pb-12 pt-7">
+        <span class="w-2 h-2 rounded-full bg-brand"></span>
 
-        <!-- BADGE -->
+        Guia prático de vendas
 
-        <div class="text-center">
-
-          <span
-            class="inline-flex rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-[11px] font-black uppercase tracking-widest text-brand-500">
-
-            Guia prático
-
-          </span>
-
-          <h1
-            class="mt-6 text-4xl font-black leading-[1.02] tracking-tight">
-
-            Os 5 Passos para
-            <span class="text-brand-500">
-              Vender em 24 Horas
-            </span>
-
-          </h1>
-
-          <p class="mt-5 text-base leading-7 text-neutral-400">
-
-            Um guia direto para transformar uma oferta em conversa,
-            conversa em oportunidade e oportunidade em venda.
-
-          </p>
-
-        </div>
+      </div>
 
 
-        <!-- PRODUTO -->
+      <h1 class="mt-7 text-4xl sm:text-5xl font-black leading-[1.02]">
 
-        <div
-          class="mt-8 overflow-hidden rounded-[28px] border border-neutral-800 bg-neutral-900 shadow-2xl">
+        Venda sua primeira oferta em
 
-          <!-- CAPA -->
+        <span class="text-brand">
+          24 horas.
+        </span>
 
-          <div
-            class="bg-gradient-to-br from-brand-500 to-brand-700 p-7">
-
-            <div class="flex items-start justify-between">
-
-              <div>
-
-                <p
-                  class="text-[10px] font-black uppercase tracking-[0.2em] text-white/70">
-
-                  E-book
-
-                </p>
-
-                <h2 class="mt-2 text-3xl font-black leading-none">
-
-                  Venda<br>
-                  em 24h.
-
-                </h2>
-
-              </div>
-
-              <div
-                class="rounded-xl bg-white/10 px-3 py-2 text-xs font-black">
-
-                PDF
-
-              </div>
-
-            </div>
+      </h1>
 
 
-            <div class="mt-10">
+      <p class="mt-5 text-lg text-gray-400 leading-relaxed">
 
-              <p class="text-sm text-white/70">
-                Acesso digital
+        Um plano simples para escolher o que vender,
+        encontrar pessoas interessadas, iniciar conversas
+        e conduzir até o pedido de compra.
+
+      </p>
+
+
+      <button
+        onclick="showPage('cartPage')"
+        class="mt-7 w-full bg-brand hover:bg-red-600 transition rounded-2xl py-5 text-lg font-black">
+
+        QUERO COMEÇAR AGORA
+
+      </button>
+
+
+      <p class="mt-3 text-center text-xs text-gray-500">
+        PDF digital • Pagamento único • R$ 19,90
+      </p>
+
+
+      <!-- OFERTA -->
+
+      <div class="mt-10 rounded-3xl border border-white/10 bg-white/[0.035] p-6">
+
+        <p class="text-xs font-black uppercase tracking-widest text-brand">
+          Você recebe
+        </p>
+
+        <h2 class="mt-2 text-2xl font-black">
+          Os 5 Passos para Vender em 24 Horas
+        </h2>
+
+
+        <div class="mt-7 space-y-5">
+
+          <div class="flex gap-3">
+
+            <span class="text-brand font-black">✓</span>
+
+            <div>
+
+              <strong>
+                Método em 5 passos
+              </strong>
+
+              <p class="mt-1 text-sm text-gray-500">
+                Uma sequência simples para sair da ideia e partir para a ação.
               </p>
 
-              <div class="mt-1 flex items-end gap-2">
+            </div>
 
-                <strong class="text-4xl font-black">
-                  R$ 19,90
-                </strong>
+          </div>
 
-                <span class="pb-1 text-xs text-white/60">
-                  pagamento único
-                </span>
 
-              </div>
+          <div class="flex gap-3">
+
+            <span class="text-brand font-black">✓</span>
+
+            <div>
+
+              <strong>
+                Checklist de execução
+              </strong>
+
+              <p class="mt-1 text-sm text-gray-500">
+                Saiba o que fazer sem ficar perdido no próximo passo.
+              </p>
 
             </div>
 
           </div>
 
 
-          <!-- CONTEÚDO -->
+          <div class="flex gap-3">
 
-          <div class="p-6">
+            <span class="text-brand font-black">✓</span>
 
-            <h3 class="font-bold">
-              O que você vai encontrar:
-            </h3>
+            <div>
 
-            <div class="mt-5 space-y-4">
+              <strong>
+                Roteiro de abordagem
+              </strong>
 
-              <div class="flex gap-3">
-
-                <span class="text-brand-500">✓</span>
-
-                <p class="text-sm text-neutral-400">
-                  Como definir uma oferta clara e fácil de vender.
-                </p>
-
-              </div>
-
-              <div class="flex gap-3">
-
-                <span class="text-brand-500">✓</span>
-
-                <p class="text-sm text-neutral-400">
-                  Como encontrar pessoas com potencial de compra.
-                </p>
-
-              </div>
-
-              <div class="flex gap-3">
-
-                <span class="text-brand-500">✓</span>
-
-                <p class="text-sm text-neutral-400">
-                  Como iniciar uma conversa sem parecer desesperado.
-                </p>
-
-              </div>
-
-              <div class="flex gap-3">
-
-                <span class="text-brand-500">✓</span>
-
-                <p class="text-sm text-neutral-400">
-                  Como apresentar sua solução.
-                </p>
-
-              </div>
-
-              <div class="flex gap-3">
-
-                <span class="text-brand-500">✓</span>
-
-                <p class="text-sm text-neutral-400">
-                  Como conduzir a conversa até o fechamento.
-                </p>
-
-              </div>
+              <p class="mt-1 text-sm text-gray-500">
+                Uma estrutura para iniciar conversas de forma natural.
+              </p>
 
             </div>
 
+          </div>
 
-            <button
-              onclick="goToCart()"
-              class="mt-7 w-full rounded-2xl bg-brand-500 px-5 py-5 text-sm font-black shadow-xl shadow-brand-500/20 transition hover:bg-brand-600 active:scale-[.98]">
 
-              QUERO VENDER EM 24 HORAS
+          <div class="flex gap-3">
 
-            </button>
+            <span class="text-brand font-black">✓</span>
 
-            <p class="mt-3 text-center text-[11px] text-neutral-600">
+            <div>
 
-              Produto digital • Acesso após confirmação
+              <strong>
+                Estrutura de oferta
+              </strong>
 
-            </p>
+              <p class="mt-1 text-sm text-gray-500">
+                Organize produto, benefício, preço e chamada para ação.
+              </p>
+
+            </div>
 
           </div>
 
         </div>
 
 
-        <!-- POSICIONAMENTO -->
+        <div class="mt-7 pt-6 border-t border-white/10">
 
-        <div class="mt-12">
-
-          <span
-            class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-500">
-
-            O problema
-
-          </span>
-
-          <h2 class="mt-3 text-3xl font-black leading-tight">
-
-            Você não precisa falar com todo mundo.
-
-          </h2>
-
-          <p class="mt-4 text-sm leading-7 text-neutral-500">
-
-            Precisa encontrar as pessoas certas, apresentar uma solução
-            clara e saber conduzir a conversa.
-
+          <p class="text-xs text-gray-500">
+            Pagamento único
           </p>
 
-        </div>
+          <div class="mt-1 flex items-center justify-between">
 
-
-        <!-- 5 PASSOS -->
-
-        <div class="mt-8 space-y-3">
-
-          <div
-            class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
-
-            <span class="text-[10px] font-black text-brand-500">
-              PASSO 01
+            <span class="text-3xl font-black">
+              R$ 19,90
             </span>
 
-            <h3 class="mt-1 font-bold">
-              Escolha o que vender
-            </h3>
+            <span class="text-xs text-gray-500">
+              Acesso digital
+            </span>
 
           </div>
 
 
-          <div
-            class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
+          <button
+            onclick="showPage('cartPage')"
+            class="mt-5 w-full bg-white text-black hover:bg-gray-200 rounded-xl py-4 font-black">
 
-            <span class="text-[10px] font-black text-brand-500">
-              PASSO 02
-            </span>
+            QUERO O PLANO
 
-            <h3 class="mt-1 font-bold">
-              Encontre quem precisa
-            </h3>
-
-          </div>
-
-
-          <div
-            class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
-
-            <span class="text-[10px] font-black text-brand-500">
-              PASSO 03
-            </span>
-
-            <h3 class="mt-1 font-bold">
-              Comece a conversa
-            </h3>
-
-          </div>
-
-
-          <div
-            class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
-
-            <span class="text-[10px] font-black text-brand-500">
-              PASSO 04
-            </span>
-
-            <h3 class="mt-1 font-bold">
-              Apresente a solução
-            </h3>
-
-          </div>
-
-
-          <div
-            class="rounded-2xl border border-neutral-800 bg-neutral-900 p-5">
-
-            <span class="text-[10px] font-black text-brand-500">
-              PASSO 05
-            </span>
-
-            <h3 class="mt-1 font-bold">
-              Peça a venda
-            </h3>
-
-          </div>
+          </button>
 
         </div>
 
-
-        <!-- CTA -->
-
-        <button
-          onclick="goToCart()"
-          class="mt-8 w-full rounded-2xl bg-brand-500 px-5 py-5 text-sm font-black shadow-xl shadow-brand-500/20">
-
-          QUERO O MÉTODO
-
-        </button>
+      </div>
 
 
-        <p class="mt-6 text-center text-[11px] text-neutral-700">
+      <!-- PROBLEMA -->
 
-          Material digital • Pagamento único
+      <div class="mt-12">
+
+        <p class="text-xs font-black uppercase tracking-widest text-brand">
+          O problema
+        </p>
+
+        <h2 class="mt-3 text-3xl font-black">
+          Você não precisa falar com todo mundo.
+        </h2>
+
+        <p class="mt-4 text-gray-400 leading-relaxed">
+
+          Você precisa encontrar as pessoas certas,
+          apresentar uma oferta clara e saber conduzir
+          a conversa até o próximo passo.
 
         </p>
 
       </div>
 
-    </section>
 
+      <!-- MÉTODO -->
 
+      <div class="mt-12">
 
-    <!-- =====================================================
-         2. CARRINHO
-    ====================================================== -->
+        <p class="text-xs font-black uppercase tracking-widest text-brand">
+          O método
+        </p>
 
-    <section id="cartPage" class="page hidden min-h-screen">
+        <h2 class="mt-3 text-3xl font-black">
+          Os 5 passos
+        </h2>
 
-      <div class="mx-auto max-w-lg px-5 py-7">
 
-        <button
-          onclick="showPage('salesPage')"
-          class="flex items-center gap-2 text-sm font-semibold text-neutral-500 hover:text-white">
+        <div class="mt-6 space-y-3">
 
-          <span class="text-xl">←</span>
+          <div class="rounded-2xl border border-white/10 p-5">
+            <span class="text-brand font-black">01</span>
 
-          Voltar
+            <h3 class="mt-2 text-xl font-black">
+              Escolha o que vender
+            </h3>
 
-        </button>
-
-
-        <div class="mt-8">
-
-          <span
-            class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-500">
-
-            Quase lá
-
-          </span>
-
-          <h1 class="mt-2 text-3xl font-black">
-            Seu pedido
-          </h1>
-
-          <p class="mt-2 text-sm text-neutral-500">
-            Confira os detalhes antes de continuar.
-          </p>
-
-        </div>
-
-
-        <!-- PRODUTO -->
-
-        <div
-          class="mt-8 overflow-hidden rounded-3xl border border-neutral-800 bg-neutral-900">
-
-          <div class="p-5">
-
-            <div class="flex gap-4">
-
-              <!-- MINI CAPA -->
-
-              <div
-                class="flex h-24 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-brand-700">
-
-                <div class="text-center">
-
-                  <p class="text-[8px] font-black uppercase">
-                    Guia
-                  </p>
-
-                  <p class="mt-1 text-[11px] font-black leading-3">
-                    VENDA<br>
-                    EM<br>
-                    24H
-                  </p>
-
-                </div>
-
-              </div>
-
-
-              <!-- INFO -->
-
-              <div class="min-w-0 flex-1">
-
-                <div class="flex justify-between gap-3">
-
-                  <div>
-
-                    <h2 class="text-sm font-bold leading-5">
-
-                      Os 5 Passos para Vender em 24 Horas
-
-                    </h2>
-
-                    <p class="mt-2 text-xs text-neutral-600">
-                      E-book digital • PDF
-                    </p>
-
-                  </div>
-
-                  <button
-                    onclick="removeProduct()"
-                    class="text-xl text-neutral-600 hover:text-brand-500">
-
-                    ×
-
-                  </button>
-
-                </div>
-
-
-                <div class="mt-5 flex items-center justify-between">
-
-                  <span class="text-xs text-neutral-600">
-                    Quantidade
-                  </span>
-
-                  <div
-                    class="flex overflow-hidden rounded-xl border border-neutral-800 bg-neutral-950">
-
-                    <button
-                      onclick="changeQuantity(-1)"
-                      class="h-9 w-9 text-neutral-400 hover:text-white">
-
-                      −
-
-                    </button>
-
-                    <span
-                      id="quantity"
-                      class="flex h-9 w-9 items-center justify-center text-sm font-bold">
-
-                      1
-
-                    </span>
-
-                    <button
-                      onclick="changeQuantity(1)"
-                      class="h-9 w-9 text-neutral-400 hover:text-white">
-
-                      +
-
-                    </button>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- BENEFÍCIOS -->
-
-        <div
-          class="mt-5 rounded-3xl border border-neutral-800 bg-neutral-900 p-5">
-
-          <h3 class="text-sm font-bold">
-            Você receberá:
-          </h3>
-
-          <div class="mt-4 space-y-3 text-sm text-neutral-400">
-
-            <p>
-              <span class="mr-2 text-brand-500">✓</span>
-              E-book completo em PDF
+            <p class="mt-2 text-sm text-gray-500">
+              Defina uma oferta simples e fácil de explicar.
             </p>
+          </div>
 
-            <p>
-              <span class="mr-2 text-brand-500">✓</span>
-              Método dividido em 5 passos
+
+          <div class="rounded-2xl border border-white/10 p-5">
+            <span class="text-brand font-black">02</span>
+
+            <h3 class="mt-2 text-xl font-black">
+              Encontre quem precisa
+            </h3>
+
+            <p class="mt-2 text-sm text-gray-500">
+              Procure pessoas que tenham o problema que você resolve.
             </p>
+          </div>
 
-            <p>
-              <span class="mr-2 text-brand-500">✓</span>
-              Acesso digital após confirmação
+
+          <div class="rounded-2xl border border-white/10 p-5">
+            <span class="text-brand font-black">03</span>
+
+            <h3 class="mt-2 text-xl font-black">
+              Comece a conversa
+            </h3>
+
+            <p class="mt-2 text-sm text-gray-500">
+              Inicie o contato sem parecer desesperado para vender.
             </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- RESUMO -->
-
-        <div
-          class="mt-5 rounded-3xl border border-neutral-800 bg-neutral-900 p-5">
-
-          <h3 class="text-sm font-bold">
-            Resumo
-          </h3>
-
-          <div class="mt-5 space-y-3">
-
-            <div
-              class="flex justify-between text-sm text-neutral-500">
-
-              <span>
-                Produto
-              </span>
-
-              <span id="subtotal">
-                R$ 19,90
-              </span>
-
-            </div>
-
-
-            <div
-              class="flex justify-between text-sm text-neutral-500">
-
-              <span>
-                Entrega
-              </span>
-
-              <span class="font-bold text-green-500">
-                Grátis
-              </span>
-
-            </div>
-
           </div>
 
 
-          <div class="my-5 border-t border-neutral-800"></div>
+          <div class="rounded-2xl border border-white/10 p-5">
+            <span class="text-brand font-black">04</span>
 
+            <h3 class="mt-2 text-xl font-black">
+              Apresente a solução
+            </h3>
 
-          <div class="flex items-end justify-between">
-
-            <span class="font-bold">
-              Total
-            </span>
-
-            <div class="text-right">
-
-              <p class="text-[10px] text-neutral-600">
-                pagamento único
-              </p>
-
-              <strong
-                id="total"
-                class="text-2xl font-black">
-
-                R$ 19,90
-
-              </strong>
-
-            </div>
-
+            <p class="mt-2 text-sm text-gray-500">
+              Mostre claramente o valor daquilo que você oferece.
+            </p>
           </div>
 
-        </div>
 
+          <div class="rounded-2xl border border-white/10 p-5">
+            <span class="text-brand font-black">05</span>
 
-        <!-- CTA -->
+            <h3 class="mt-2 text-xl font-black">
+              Peça a venda
+            </h3>
 
-        <button
-          id="checkoutButton"
-          onclick="goToCheckout()"
-          class="mt-6 w-full rounded-2xl bg-brand-500 px-5 py-5 text-sm font-black shadow-xl shadow-brand-500/20 transition active:scale-[.98]">
-
-          CONTINUAR PARA PAGAMENTO
-
-        </button>
-
-
-        <div class="mt-5 flex justify-center gap-2 text-center">
-
-          <span class="text-green-500">
-            🔒
-          </span>
-
-          <p class="text-xs text-neutral-600">
-            Compra digital • Pagamento seguro
-          </p>
+            <p class="mt-2 text-sm text-gray-500">
+              Faça o convite para comprar e conduza o próximo passo.
+            </p>
+          </div>
 
         </div>
 
       </div>
 
-    </section>
 
+      <!-- CTA FINAL -->
 
+      <div class="mt-12 pb-10 text-center">
 
-    <!-- =====================================================
-         3. CHECKOUT
-    ====================================================== -->
+        <h2 class="text-3xl font-black">
+          Pare de esperar.
+        </h2>
 
-    <section id="checkoutPage" class="page hidden min-h-screen">
+        <p class="mt-3 text-gray-500">
+          Coloque uma oferta na rua e comece.
+        </p>
 
-      <div class="mx-auto max-w-lg px-5 py-7">
 
         <button
           onclick="showPage('cartPage')"
-          class="flex items-center gap-2 text-sm font-semibold text-neutral-500 hover:text-white">
+          class="mt-6 w-full bg-brand hover:bg-red-600 rounded-2xl py-5 font-black text-lg">
 
-          <span class="text-xl">←</span>
-
-          Voltar
+          COMEÇAR AGORA — R$ 19,90
 
         </button>
 
+      </div>
 
-        <div class="mt-8">
+    </div>
 
-          <span
-            class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-500">
+  </section>
 
-            Checkout
 
-          </span>
+  <!-- ===================================================== -->
+  <!-- CARRINHO -->
+  <!-- ===================================================== -->
 
-          <h1 class="mt-2 text-3xl font-black">
-            Finalizar compra
-          </h1>
+  <section id="cartPage" class="page">
 
-          <p class="mt-2 text-sm text-neutral-500">
-            Preencha seus dados para continuar.
-          </p>
+    <div class="max-w-xl mx-auto px-5 py-8">
+
+      <button
+        onclick="showPage('salesPage')"
+        class="text-sm text-gray-500 hover:text-white">
+        ← Voltar
+      </button>
+
+
+      <p class="mt-8 text-xs font-black uppercase tracking-widest text-brand">
+        Seu pedido
+      </p>
+
+
+      <h1 class="mt-2 text-3xl font-black">
+        Quase lá.
+      </h1>
+
+
+      <p class="mt-3 text-gray-400">
+        Confira seu pedido antes de continuar.
+      </p>
+
+
+      <div class="mt-8 rounded-2xl border border-white/10 bg-white/[0.035] p-5">
+
+        <div class="flex justify-between gap-4">
+
+          <div>
+
+            <h2 class="font-black">
+              Os 5 Passos para Vender em 24 Horas
+            </h2>
+
+            <p class="mt-1 text-sm text-gray-500">
+              PDF + checklist + roteiro
+            </p>
+
+          </div>
+
+
+          <strong class="whitespace-nowrap">
+            R$ 19,90
+          </strong>
 
         </div>
 
 
-        <form
-          id="checkoutForm"
-          class="mt-8 space-y-5">
+        <div class="mt-6 pt-5 border-t border-white/10">
+
+          <div class="flex items-center justify-between">
+
+            <span class="text-sm text-gray-500">
+              Quantidade
+            </span>
 
 
-          <!-- NOME -->
+            <div class="flex items-center gap-3">
 
-          <div>
-
-            <label class="text-sm font-bold">
-              Nome
-            </label>
-
-            <input
-              id="name"
-              type="text"
-              required
-              placeholder="Seu nome"
-              class="mt-2 w-full rounded-2xl border border-neutral-800 bg-neutral-900 px-4 py-4 text-white outline-none transition placeholder:text-neutral-700 focus:border-brand-500">
-
-          </div>
+              <button
+                onclick="changeQuantity(-1)"
+                class="w-9 h-9 rounded-lg bg-white/10 font-black">
+                −
+              </button>
 
 
-          <!-- EMAIL -->
-
-          <div>
-
-            <label class="text-sm font-bold">
-              E-mail
-            </label>
-
-            <input
-              id="email"
-              type="email"
-              required
-              placeholder="voce@email.com"
-              class="mt-2 w-full rounded-2xl border border-neutral-800 bg-neutral-900 px-4 py-4 text-white outline-none transition placeholder:text-neutral-700 focus:border-brand-500">
-
-          </div>
-
-
-          <!-- PAGAMENTO -->
-
-          <div>
-
-            <label class="text-sm font-bold">
-              Pagamento
-            </label>
-
-            <select
-              id="payment"
-              class="mt-2 w-full rounded-2xl border border-neutral-800 bg-neutral-900 px-4 py-4 text-white outline-none focus:border-brand-500">
-
-              <option value="pix">
-                PIX
-              </option>
-
-              <option value="card">
-                Cartão
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <!-- RESUMO -->
-
-          <div
-            class="rounded-3xl border border-neutral-800 bg-neutral-900 p-5">
-
-            <div class="flex justify-between">
-
-              <span class="text-sm text-neutral-500">
-                Os 5 Passos para Vender em 24 Horas
+              <span
+                id="quantity"
+                class="w-5 text-center font-black">
+                1
               </span>
 
-              <strong id="checkoutTotal">
-                R$ 19,90
-              </strong>
+
+              <button
+                onclick="changeQuantity(1)"
+                class="w-9 h-9 rounded-lg bg-white/10 font-black">
+                +
+              </button>
 
             </div>
 
           </div>
 
-
-          <!-- BOTÃO -->
-
-          <button
-            type="submit"
-            class="w-full rounded-2xl bg-brand-500 px-5 py-5 text-sm font-black shadow-xl shadow-brand-500/20 transition hover:bg-brand-600 active:scale-[.98]">
-
-            FINALIZAR COMPRA
-
-          </button>
-
-
-          <p class="text-center text-[11px] leading-5 text-neutral-700">
-
-            Checkout demonstrativo.
-            Nenhum pagamento real será processado.
-
-          </p>
-
-        </form>
+        </div>
 
       </div>
 
-    </section>
+
+      <div class="mt-6 flex items-center justify-between">
+
+        <span class="text-gray-500">
+          Total
+        </span>
+
+        <strong
+          id="cartTotal"
+          class="text-3xl font-black">
+          R$ 19,90
+        </strong>
+
+      </div>
 
 
+      <button
+        onclick="showPage('checkoutPage')"
+        class="mt-6 w-full rounded-2xl bg-brand hover:bg-red-600 py-5 font-black text-lg">
 
-    <!-- =====================================================
-         4. COMPRA CONCLUÍDA
-    ====================================================== -->
+        CONTINUAR PARA PAGAMENTO
 
-    <section id="successPage" class="page hidden min-h-screen">
-
-      <div
-        class="flex min-h-screen items-center justify-center px-5">
-
-        <div class="w-full max-w-lg text-center">
+      </button>
 
 
-          <!-- ÍCONE -->
+      <p class="mt-4 text-center text-xs text-gray-600">
+        Pagamento via Pix
+      </p>
 
-          <div
-            class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-500/10 text-4xl text-green-500">
+    </div>
 
-            ✓
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- CHECKOUT -->
+  <!-- ===================================================== -->
+
+  <section id="checkoutPage" class="page">
+
+    <div class="max-w-xl mx-auto px-5 py-8">
+
+      <button
+        onclick="showPage('cartPage')"
+        class="text-sm text-gray-500 hover:text-white">
+        ← Voltar
+      </button>
+
+
+      <p class="mt-8 text-xs font-black uppercase tracking-widest text-brand">
+        Pagamento
+      </p>
+
+
+      <h1 class="mt-2 text-3xl font-black">
+        Finalizar compra
+      </h1>
+
+
+      <p class="mt-3 text-gray-400">
+        Preencha seus dados e faça o Pix.
+      </p>
+
+
+      <!-- DADOS -->
+
+      <div class="mt-8 space-y-4">
+
+        <div>
+
+          <label class="block mb-2 text-sm font-bold">
+            Nome
+          </label>
+
+          <input
+            id="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Seu nome"
+            class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 outline-none focus:border-brand">
+
+        </div>
+
+
+        <div>
+
+          <label class="block mb-2 text-sm font-bold">
+            E-mail
+          </label>
+
+          <input
+            id="email"
+            type="email"
+            autocomplete="email"
+            placeholder="voce@email.com"
+            class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 outline-none focus:border-brand">
+
+        </div>
+
+      </div>
+
+
+      <!-- PIX -->
+
+      <div class="mt-7 rounded-2xl border border-brand/30 bg-brand/[0.05] p-5">
+
+        <div class="flex items-center justify-between">
+
+          <div>
+
+            <p class="text-xs text-gray-500 uppercase">
+              Total
+            </p>
+
+            <strong
+              id="pixTotal"
+              class="text-2xl font-black">
+              R$ 19,90
+            </strong>
 
           </div>
 
-
-          <span
-            class="mt-6 block text-[10px] font-black uppercase tracking-[0.2em] text-green-500">
-
-            Compra concluída
-
+          <span class="text-xs font-black text-brand">
+            PIX
           </span>
 
-
-          <h1 class="mt-3 text-4xl font-black">
-            Tudo certo.
-          </h1>
+        </div>
 
 
-          <p
-            id="successMessage"
-            class="mx-auto mt-4 max-w-sm text-sm leading-7 text-neutral-500">
+        <div class="mt-5">
 
-            Seu pedido foi registrado com sucesso.
-
+          <p class="text-xs text-gray-500">
+            Chave Pix
           </p>
 
 
-          <!-- PRODUTO -->
+          <div class="mt-2 flex gap-2">
 
-          <div
-            class="mt-8 rounded-3xl border border-neutral-800 bg-neutral-900 p-6 text-left">
-
-            <span
-              class="text-[10px] font-black uppercase tracking-widest text-neutral-600">
-
-              Seu produto
-
-            </span>
-
-
-            <h2 class="mt-2 font-bold">
-
-              Os 5 Passos para Vender em 24 Horas
-
-            </h2>
-
-
-            <p class="mt-2 text-xs text-neutral-600">
-              Formato PDF
-            </p>
+            <input
+              id="pixKey"
+              value="viniciusaraujoflip@gmail.com"
+              readonly
+              class="min-w-0 flex-1 rounded-xl bg-black/40 border border-white/10 px-3 py-3 text-sm">
 
 
             <button
-              onclick="downloadPDF()"
-              class="mt-5 w-full rounded-2xl bg-white px-5 py-4 text-sm font-black text-neutral-950 transition active:scale-[.98]">
+              onclick="copyPix()"
+              class="rounded-xl bg-white text-black px-4 font-black text-sm">
 
-              ACESSAR MEU PDF
+              COPIAR
 
             </button>
 
           </div>
 
+        </div>
 
-          <button
-            onclick="showPage('salesPage')"
-            class="mt-6 text-sm font-semibold text-neutral-600 hover:text-white">
+      </div>
 
-            Voltar para a página inicial
 
-          </button>
+      <!-- INSTRUÇÕES -->
+
+      <div class="mt-6 rounded-2xl border border-white/10 p-5">
+
+        <p class="font-black">
+          Faça assim
+        </p>
+
+
+        <div class="mt-5 space-y-5">
+
+          <div class="flex gap-4">
+
+            <span class="w-8 h-8 shrink-0 rounded-full bg-brand flex items-center justify-center font-black">
+              1
+            </span>
+
+            <div>
+
+              <strong>
+                Copie a chave
+              </strong>
+
+              <p class="mt-1 text-sm text-gray-500">
+                Use o botão acima.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <span class="w-8 h-8 shrink-0 rounded-full bg-brand flex items-center justify-center font-black">
+              2
+            </span>
+
+            <div>
+
+              <strong>
+                Faça o Pix
+              </strong>
+
+              <p class="mt-1 text-sm text-gray-500">
+                Realize o pagamento de
+                <span id="instructionTotal">R$ 19,90</span>.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <span class="w-8 h-8 shrink-0 rounded-full bg-brand flex items-center justify-center font-black">
+              3
+            </span>
+
+            <div>
+
+              <strong>
+                Pegue o ID da transação
+              </strong>
+
+              <p class="mt-1 text-sm text-gray-500">
+                Ele aparece no comprovante do Pix.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <span class="w-8 h-8 shrink-0 rounded-full bg-brand flex items-center justify-center font-black">
+              4
+            </span>
+
+            <div>
+
+              <strong>
+                Envie o pedido
+              </strong>
+
+              <p class="mt-1 text-sm text-gray-500">
+                Informe o ID abaixo para conferência.
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
       </div>
 
-    </section>
 
-  </main>
+      <!-- ID PIX -->
+
+      <div class="mt-6">
+
+        <label class="block mb-2 text-sm font-bold">
+          ID da transação Pix
+        </label>
 
 
+        <input
+          id="transactionId"
+          type="text"
+          placeholder="Cole o ID da transação"
+          class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-4 outline-none focus:border-brand">
 
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
 
-  <script>
+        <p class="mt-2 text-xs text-gray-600">
+          O ID será usado como referência para localizar seu pagamento.
+        </p>
 
-    const unitPrice = 19.90;
+      </div>
+
+
+      <button
+        id="submitButton"
+        onclick="submitOrder()"
+        class="mt-6 w-full rounded-2xl bg-brand hover:bg-red-600 py-5 font-black text-lg">
+
+        JÁ FIZ O PIX — ENVIAR PEDIDO
+
+      </button>
+
+
+      <p class="mt-4 text-center text-xs text-gray-600">
+        O pagamento será conferido antes da liberação do material.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- PEDIDO RECEBIDO -->
+  <!-- ===================================================== -->
+
+  <section id="successPage" class="page">
+
+    <div class="max-w-xl mx-auto px-5 py-12 text-center">
+
+      <div class="mx-auto w-16 h-16 rounded-full bg-green-500/10 border border-green-500/20 flex items-center justify-center">
+
+        <span class="text-green-400 text-3xl">
+          ✓
+        </span>
+
+      </div>
+
+
+      <p class="mt-7 text-xs font-black uppercase tracking-widest text-green-400">
+        Pedido enviado
+      </p>
+
+
+      <h1 class="mt-3 text-3xl font-black">
+        Pedido recebido.
+      </h1>
+
+
+      <p class="mt-4 text-gray-400 leading-relaxed">
+        Seu pedido foi registrado com sucesso.
+        O pagamento ainda precisa ser conferido antes da liberação do PDF.
+      </p>
+
+
+      <div class="mt-8 rounded-2xl border border-white/10 bg-white/[0.035] p-6">
+
+        <p class="text-xs text-gray-500 uppercase tracking-widest">
+          Número do pedido
+        </p>
+
+
+        <p
+          id="orderCode"
+          class="mt-3 text-2xl font-black">
+          —
+        </p>
+
+      </div>
+
+
+      <div class="mt-5 rounded-2xl border border-yellow-500/20 bg-yellow-500/[0.04] p-5 text-left">
+
+        <p class="font-bold">
+          ⏳ Pagamento aguardando conferência
+        </p>
+
+
+        <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+          O ID da transação foi registrado.
+          Após a conferência do pagamento, o PDF poderá ser liberado.
+        </p>
+
+      </div>
+
+
+      <button
+        onclick="copyOrderCode()"
+        class="mt-6 w-full rounded-xl bg-white text-black py-4 font-black">
+
+        COPIAR NÚMERO DO PEDIDO
+
+      </button>
+
+
+      <button
+        onclick="showPage('salesPage')"
+        class="mt-6 text-sm text-gray-500 hover:text-white">
+
+        ← Voltar para a página inicial
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===================================================== -->
+  <!-- FIREBASE + FIRESTORE -->
+  <!-- ===================================================== -->
+
+  <script type="module">
+
+    import {
+      db
+    } from "./firebase/config.js";
+
+    import {
+      collection,
+      addDoc,
+      serverTimestamp
+    } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+
+    const PRICE = 19.90;
+
+    const PIX_KEY =
+      "viniciusaraujoflip@gmail.com";
 
     let quantity = 1;
 
 
-    /*
-      Todas as telas ficam dentro do mesmo HTML.
-    */
+    // =====================================================
+    // NAVEGAÇÃO
+    // =====================================================
 
-    const pages = [
-      "salesPage",
-      "cartPage",
-      "checkoutPage",
-      "successPage"
-    ];
+    window.showPage = function(pageId) {
 
-
-    function showPage(pageId) {
-
-      pages.forEach(function(id) {
-
-        document
-          .getElementById(id)
-          .classList.add("hidden");
-
-      });
+      document
+        .querySelectorAll(".page")
+        .forEach(page => {
+          page.classList.remove("active");
+        });
 
 
-      const page = document.getElementById(pageId);
+      const page =
+        document.getElementById(pageId);
 
-      page.classList.remove("hidden");
+
+      if (page) {
+        page.classList.add("active");
+      }
 
 
       window.scrollTo({
@@ -948,26 +888,16 @@
       });
 
 
-      updateCart();
+      updateTotals();
 
-    }
-
-
-    function goToCart() {
-
-      showPage("cartPage");
-
-    }
+    };
 
 
-    function goToCheckout() {
+    // =====================================================
+    // QUANTIDADE
+    // =====================================================
 
-      showPage("checkoutPage");
-
-    }
-
-
-    function changeQuantity(value) {
+    window.changeQuantity = function(value) {
 
       quantity += value;
 
@@ -982,158 +912,344 @@
       }
 
 
-      updateCart();
-
-    }
-
-
-    function updateCart() {
-
-      const total = unitPrice * quantity;
+      document
+        .getElementById("quantity")
+        .textContent = quantity;
 
 
-      const formatted = total.toLocaleString(
-        "pt-BR",
-        {
-          style: "currency",
-          currency: "BRL"
-        }
-      );
+      updateTotals();
+
+    };
 
 
-      const quantityElement =
-        document.getElementById("quantity");
+    // =====================================================
+    // TOTAL
+    // =====================================================
 
-      const subtotalElement =
-        document.getElementById("subtotal");
+    function updateTotals() {
 
-      const totalElement =
-        document.getElementById("total");
-
-      const checkoutTotalElement =
-        document.getElementById("checkoutTotal");
+      const total =
+        PRICE * quantity;
 
 
-      if (quantityElement) {
+      const formatted =
+        total.toLocaleString("pt-BR", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        });
 
-        quantityElement.textContent =
-          quantity;
 
+      const cartTotal =
+        document.getElementById("cartTotal");
+
+
+      const pixTotal =
+        document.getElementById("pixTotal");
+
+
+      const instructionTotal =
+        document.getElementById("instructionTotal");
+
+
+      if (cartTotal) {
+        cartTotal.textContent =
+          `R$ ${formatted}`;
       }
 
 
-      if (subtotalElement) {
-
-        subtotalElement.textContent =
-          formatted;
-
+      if (pixTotal) {
+        pixTotal.textContent =
+          `R$ ${formatted}`;
       }
 
 
-      if (totalElement) {
-
-        totalElement.textContent =
-          formatted;
-
-      }
-
-
-      if (checkoutTotalElement) {
-
-        checkoutTotalElement.textContent =
-          formatted;
-
+      if (instructionTotal) {
+        instructionTotal.textContent =
+          `R$ ${formatted}`;
       }
 
     }
 
 
-    function removeProduct() {
+    // =====================================================
+    // COPIAR PIX
+    // =====================================================
 
-      const confirmed = confirm(
-        "Remover este produto do carrinho?"
-      );
+    window.copyPix = async function() {
 
+      try {
 
-      if (!confirmed) return;
+        await navigator.clipboard.writeText(PIX_KEY);
 
+        alert("Chave Pix copiada!");
 
-      quantity = 1;
+      } catch (error) {
 
-      showPage("salesPage");
+        alert(
+          "Chave Pix:\n\n" +
+          PIX_KEY
+        );
 
-    }
+      }
 
-
-    /*
-      CHECKOUT
-    */
-
-    document
-      .getElementById("checkoutForm")
-      .addEventListener(
-        "submit",
-        function(event) {
-
-          event.preventDefault();
+    };
 
 
-          const name =
-            document
-              .getElementById("name")
-              .value
-              .trim();
+    // =====================================================
+    // ENVIAR PEDIDO AO FIRESTORE
+    // =====================================================
+
+    window.submitOrder = async function() {
+
+      const name =
+        document
+          .getElementById("name")
+          .value
+          .trim();
 
 
-          const email =
-            document
-              .getElementById("email")
-              .value
-              .trim();
+      const email =
+        document
+          .getElementById("email")
+          .value
+          .trim();
 
 
-          if (!name || !email) {
-
-            return;
-
-          }
-
-
-          document
-            .getElementById("successMessage")
-            .textContent =
-              "Obrigado, " +
-              name +
-              ". Seu pedido foi registrado com sucesso.";
+      const transactionId =
+        document
+          .getElementById("transactionId")
+          .value
+          .trim();
 
 
-          showPage("successPage");
+      // -----------------------------
+      // VALIDAÇÕES
+      // -----------------------------
 
-        }
-      );
+      if (!name) {
 
+        alert("Digite seu nome.");
 
-    /*
-      PDF
-    */
+        document
+          .getElementById("name")
+          .focus();
 
-    function downloadPDF() {
+        return;
 
-      alert(
-        "Aqui vamos conectar o PDF real na próxima etapa."
-      );
-
-    }
+      }
 
 
-    /*
-      Inicialização
-    */
+      if (!email || !email.includes("@")) {
 
-    updateCart();
+        alert("Digite um e-mail válido.");
+
+        document
+          .getElementById("email")
+          .focus();
+
+        return;
+
+      }
+
+
+      if (!transactionId) {
+
+        alert("Digite o ID da transação Pix.");
+
+        document
+          .getElementById("transactionId")
+          .focus();
+
+        return;
+
+      }
+
+
+      const button =
+        document.getElementById("submitButton");
+
+
+      button.disabled = true;
+
+      button.textContent =
+        "REGISTRANDO PEDIDO...";
+
+
+      try {
+
+        // -----------------------------
+        // NÚMERO DO PEDIDO
+        // -----------------------------
+
+        const orderCode =
+          "PED-" +
+          Date.now()
+            .toString()
+            .slice(-8);
+
+
+        // -----------------------------
+        // VALOR
+        // -----------------------------
+
+        const total =
+          Number(
+            (PRICE * quantity).toFixed(2)
+          );
+
+
+        // -----------------------------
+        // FIRESTORE
+        // -----------------------------
+
+        const docRef =
+          await addDoc(
+            collection(db, "orders"),
+            {
+
+              orderCode: orderCode,
+
+              product:
+                "Os 5 Passos para Vender em 24 Horas",
+
+              name: name,
+
+              email: email,
+
+              transactionId:
+                transactionId,
+
+              quantity:
+                quantity,
+
+              unitPrice:
+                PRICE,
+
+              total:
+                total,
+
+              pixKey:
+                PIX_KEY,
+
+              status:
+                "aguardando_conferencia",
+
+              paymentStatus:
+                "aguardando",
+
+              createdAt:
+                serverTimestamp()
+
+            }
+          );
+
+
+        // -----------------------------
+        // SALVAR REFERÊNCIA LOCAL
+        // -----------------------------
+
+        localStorage.setItem(
+          "lastOrder",
+          JSON.stringify({
+
+            id: docRef.id,
+
+            orderCode:
+              orderCode,
+
+            name:
+              name,
+
+            email:
+              email,
+
+            transactionId:
+              transactionId,
+
+            quantity:
+              quantity,
+
+            total:
+              total
+
+          })
+        );
+
+
+        // -----------------------------
+        // MOSTRAR SUCESSO
+        // -----------------------------
+
+        document
+          .getElementById("orderCode")
+          .textContent =
+          orderCode;
+
+
+        showPage("successPage");
+
+
+      } catch (error) {
+
+        console.error(
+          "Erro ao registrar pedido:",
+          error
+        );
+
+
+        alert(
+          "Não foi possível registrar o pedido.\n\n" +
+          "Verifique sua conexão e tente novamente."
+        );
+
+
+        button.disabled = false;
+
+        button.textContent =
+          "JÁ FIZ O PIX — ENVIAR PEDIDO";
+
+      }
+
+    };
+
+
+    // =====================================================
+    // COPIAR NÚMERO DO PEDIDO
+    // =====================================================
+
+    window.copyOrderCode = async function() {
+
+      const code =
+        document
+          .getElementById("orderCode")
+          .textContent;
+
+
+      try {
+
+        await navigator.clipboard.writeText(code);
+
+        alert("Número do pedido copiado!");
+
+      } catch (error) {
+
+        alert(
+          "Número do pedido:\n\n" +
+          code
+        );
+
+      }
+
+    };
+
+
+    // =====================================================
+    // INICIALIZAÇÃO
+    // =====================================================
+
+    updateTotals();
 
   </script>
 
 </body>
 </html>
-
